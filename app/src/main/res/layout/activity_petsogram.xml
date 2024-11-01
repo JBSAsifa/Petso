@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/petsogram"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".petsogram"
+    android:orientation="vertical"
+    android:background="@drawable/footprint"
+    >
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/petsogram1"
+            android:contentDescription="Profile Picture"
+            android:layout_marginEnd="8dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="Welcome to Petsogram"
+            android:textColor="#7C5151"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <!-- Feed Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Post Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#81CBB7F2"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/yuki"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yuki"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+                <!-- Post Image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/yuki2"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Like, Comment, and Share Icons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/love"
+                        android:contentDescription="Like Icon"
+                        android:tint="#D81B60" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/comment"
+                        android:contentDescription="Comment Icon"
+                        android:layout_marginStart="16dp"
+                        android:tint="#020202" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/share"
+                        android:contentDescription="Share Icon"
+                        android:layout_marginStart="16dp"
+                        android:tint="@color/black" />
+                </LinearLayout>
+
+                <!-- Post Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yuki's Day"
+                    android:textStyle="italic"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <!-- Additional Feed Items can be dynamically generated here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#311F5D"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:contentDescription="Home"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:contentDescription="Search"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/post"
+            app:tint="@color/white"
+            android:contentDescription="Post" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notification"
+            app:tint="@color/white"
+            android:contentDescription="Notifications" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/user"
+            app:tint="@color/white"
+            android:contentDescription="Profile" />
+    </LinearLayout>
+
+
+</LinearLayout>
