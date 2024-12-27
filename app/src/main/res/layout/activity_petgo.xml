@@ -8,7 +8,7 @@
     tools:context=".PetCare"
     android:orientation="vertical"
     android:background="@drawable/footprint"
-    android:padding="16dp"
+    android:padding="50dp"
     >
 
     <!-- Medical help at the Top -->

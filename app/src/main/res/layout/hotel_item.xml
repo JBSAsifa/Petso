@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Horizontal layout for hotel name and booking button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Hotel Name Text -->
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Hotel Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Booking Button -->
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking"
+            android:paddingStart="8dp"
+            android:layout_weight="0.3"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Hotel Address Text -->
+    <TextView
+        android:id="@+id/hotel_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Address"
+        android:textSize="14sp" />
+
+    <!-- Hotel Status Text -->
+    <TextView
+        android:id="@+id/hotel_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_green_dark" />
+</LinearLayout>

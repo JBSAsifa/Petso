@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "540638669519",
+    "project_id": "petso-a529a",
+    "storage_bucket": "petso-a529a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540638669519:android:ce7c8094a6d57cbac0a5ba",
+        "android_client_info": {
+          "package_name": "com.example.petso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVlJ6dMnx6XwfsA2FTVSRO7TBhWA5R9V4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

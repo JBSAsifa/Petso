@@ -1,5 +1,7 @@
 package com.example.petso;
 
+
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +17,7 @@ public class Shoppiee extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_shoppiee);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.shoppiee), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
